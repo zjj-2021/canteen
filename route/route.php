@@ -184,6 +184,10 @@ Route::post('api/:version/pos/cancel', 'api/:version.Pos/cancel');
 Route::post('api/:version/pos/recover', 'api/:version.Pos/recover');
 Route::get('api/:version/pos/machine', 'api/:version.Pos/machine');
 
+Route::get('api/:version/punishment/strategyDetail', 'api/:version.Punishment/strategyDetail');
+Route::post('api/:version/punishment/updateStrategy', 'api/:version.Punishment/updateStrategy');
+
+
 Route::rule('api/:version/weixin/server', 'api/:version.WeiXin/server');
 Route::rule('api/:version/weixin/menu/save', 'api/:version.WeiXin/createMenu');
 
